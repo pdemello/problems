@@ -26,13 +26,10 @@ public class yodle3 {
 			PriorityQueue<Map.Entry<String,Integer>> pq = new PriorityQueue<Map.Entry<String,Integer>>(m.size(),
                 new Comparator<Map.Entry<String,Integer>>() {
                     public int compare(Map.Entry<String,Integer> o1, Map.Entry<String,Integer> o2) {
-                        if (o1.getValue() == o2.getValue())
+                        if (o1.getValue().equals(o2.getValue()))
                             return o1.getKey().compareTo(o2.getKey());
                         else
                             return o2.getValue() - o1.getValue();
-                    }
-                    public boolean equals(Object o) {
-                        return this == o;
                     }
                 });
 			for (Map.Entry<String,Integer> me : m.entrySet()) {
