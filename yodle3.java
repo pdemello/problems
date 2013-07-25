@@ -12,7 +12,7 @@ public class yodle3 {
 			// First read from file
             // Wow this scanner is a lot slower than the Buffered reader stuff...
             Map<String,Integer> m = new HashMap<String,Integer>();
-            Scanner sc = new Scanner(new File(args[0]));
+            Scanner sc = new Scanner(new BufferedReader(new FileReader(args[0])));
             sc.useDelimiter("[^a-zA-Z]");
             while (sc.hasNext()) {
                 String s = sc.next();
