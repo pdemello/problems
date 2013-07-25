@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.PriorityQueue;
+
 public class epi7_1 {
 	public static void main(String[] args) {
 
@@ -14,7 +18,7 @@ public class epi7_1 {
 				if (n != null)
 					pq.add(n);
 			}
-		while (pq.peek())
+		while (pq.peek()) {
 			Node n = pq.poll();
 			ret.add(pq.poll());
 		}
@@ -26,4 +30,5 @@ class Node implements Comparable {
 	public String line;
 	public int compareTo(Node n) {
 		return time - n.time;
+    }
 }
