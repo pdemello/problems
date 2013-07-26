@@ -2,6 +2,8 @@ import java.util.ArrayDeque;
 import java.util.Arrays;
 import java.util.Queue;
 
+// This is actually a variant where duplicates are allowed in the list.
+
 public class epi8_3 {
     public static class Pair<T> {
         T a;
