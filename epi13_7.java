@@ -1,4 +1,4 @@
-import utils.GraphNode;
+import cafezinho.util.GraphNode;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

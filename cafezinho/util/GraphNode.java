@@ -1,4 +1,4 @@
-package utils;
+package cafezinho.util;
 
 import java.util.ArrayList;
 import java.util.List;
