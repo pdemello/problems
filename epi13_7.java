@@ -59,6 +59,7 @@ public class epi13_7 {
             for (int edge : node.getEdges()) {
                 System.out.printf("%d\t", edge);
             }
+
             System.out.println();
         }
 
