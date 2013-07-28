@@ -56,8 +56,9 @@ public class epi13_7 {
         System.out.printf("\nThe graph:\n\n");
         for (GraphNode<Integer> node : graph) {
             System.out.printf("Team\t%d:\t", node.getData());
-            for (int edge : node.getEdges())
+            for (int edge : node.getEdges()) {
                 System.out.printf("%d\t", edge);
+            }
             System.out.println();
         }
 
