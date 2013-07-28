@@ -10,16 +10,23 @@ import java.util.List;
  */
 public class GraphNode<T> {
     T data;
-    List<T> edges;
+    List<GraphNode<T>> edges;
+    GraphNode<T> pathway;
 
     public GraphNode(T data) {
         this.data = data;
         edges = new ArrayList<>();
     }
-    public List<T> getEdges() {
+    public List<GraphNode<T>> getEdges() {
         return edges;
     }
     public T getData() {
         return data;
+    }
+    public GraphNode<T> getPathway() {
+        return pathway;
+    }
+    public void setPathway(GraphNode<T> node) {
+        pathway = node;
     }
 }
