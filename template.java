@@ -4,6 +4,6 @@ public class template {
 
         System.out.println("Hi.");
 
-        System.out.println((System.nanoTime()-startTime)/100000 + "ms");
+        System.out.printf("\n%d ms\n", (System.nanoTime()-startTime)/100000);
     }
 }
